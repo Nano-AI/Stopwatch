@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto&display=swap');
+body {
+  background-color: black;
+  color: green;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  counter-reset: li;
+}
+
+li::before {
+  content: counter(li);
+  color: white;
+  margin-left: -1em;
+  margin-right: 1em;
+}
+
+li {
+  counter-increment: li;
+}
+
+button {
+  background: green;
+  color: black;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 26px;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+#time {
+  font-size: 15vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
